@@ -350,7 +350,7 @@ function toast(msg, ms = 3600) {
     // meta
     nameEl.textContent = L.name;
     descEl.textContent = L.desc;
-    getEl.href = 'mailto:hello@sushant.studio?subject=' + encodeURIComponent('Get the ' + L.name + ' LUT pack');
+    getEl.href = 'mailto:sushantc909@gmail.com?subject=' + encodeURIComponent('Get the ' + L.name + ' LUT pack');
   }
   chips.forEach((c) => c.addEventListener('click', () => setLut(c.dataset.lut)));
 
@@ -368,7 +368,7 @@ function toast(msg, ms = 3600) {
     const name = (d.get('name') || '').toString();
     const msg = (d.get('msg') || '').toString();
     window.location.href =
-      'mailto:hello@sushant.studio' +
+      'mailto:sushantc909@gmail.com' +
       '?subject=' + encodeURIComponent('LUT + AI project from ' + (name || 'the website')) +
       '&body=' + encodeURIComponent(msg + '\n\n— ' + name);
     toast('Opening your email app… the message is ready to send ✦');

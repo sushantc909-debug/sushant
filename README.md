@@ -91,7 +91,7 @@ amber: {
 `hue-rotate()` `blur()` `grayscale()` — mix as many as you like.
 
 ### 3. Your contact details
-Search for `hello@sushant.studio` in `index.html` and `js/main.js`
+Search for `sushantc909@gmail.com` in `index.html` and `js/main.js`
 (3 places each) and replace it with **your** email / WhatsApp.
 
 ---
