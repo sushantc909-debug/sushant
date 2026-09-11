@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sushant Studios — Anti-Gravity Cinematic LUTs &amp; AI Video</title>
+  <meta name="description" content="Cinematic LUTs and AI video engines — Google Flow, Gemini, Veo &amp; Seedance 2.5. Works like an app on your phone and your laptop.">
+  <meta name="theme-color" content="#05060a">
+
+  <!-- Open Graph / sharing -->
+  <meta property="og:title" content="Sushant Studios — Color that floats.">
+  <meta property="og:description" content="Anti-gravity cinematic LUT lab + AI video engines. Phone-first, laptop-ready.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- PWA / Android app -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Sushant">
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <!-- Fonts (falls back to system fonts when offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Sushant Studios — home">
+      <img src="icons/icon-512.png" alt="" width="30" height="30">
+      <span>SUSHANT<em>STUDIOS</em></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="#lab">LUT Lab</a>
+      <a href="#ai">AI Engines</a>
+      <a href="#showcase">Showreel</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="installBtn" class="btn btn-ghost btn-sm" hidden>⤓&nbsp;Install app</button>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#lab">LUT Lab</a>
+    <a href="#ai">AI Engines</a>
+    <a href="#showcase">Showreel</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+    <button id="installBtn2" class="btn btn-ghost" hidden>⤓&nbsp;Install app</button>
+    <p class="mobile-hint">Tip: on Android, open in Chrome → ⋮ → <b>Install app</b> to get the home-screen icon.</p>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO (3D anti-gravity) ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="images/hero.jpg" alt="" fetchpriority="high">
+      </div>
+      <canvas id="gravity" aria-hidden="true"></canvas>
+
+      <div class="hero-inner" id="heroTilt">
+        <span class="badge">✦&nbsp; AI CREATOR — VIDEO + IMAGE STUDIO</span>
+        <h1>Your idea in.<br><span class="grad">A movie out.</span></h1>
+        <p class="lede">
+          I make <b>videos</b> and generate <b>images</b> with the best AI engines on the
+          planet — <b>Google Flow</b>, <b>Gemini</b>, <b>Veo</b> &amp; <b>Seedance&nbsp;2.5</b>.
+          You give me an idea. I give you cinema.
+        </p>
+        <div class="hero-cta">
+          <a href="#showcase" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Start a project →</a>
+        </div>
+
+        <div class="hero-cards">
+          <div class="hcard glass">
+            <span class="hcard-ico" aria-hidden="true">🎬</span>
+            <h3>I make videos</h3>
+            <p>Reels, Shorts, music videos, full edits — AI-directed, color-graded, 4K.</p>
+          </div>
+          <div class="hcard glass">
+            <span class="hcard-ico" aria-hidden="true">🖼️</span>
+            <h3>I generate images</h3>
+            <p>Cinematic posters, faces, worlds and covers — best-of-best AI art.</p>
+          </div>
+        </div>
+
+        <p class="need-line">
+          All I need from you: <b>1 idea</b> · a song (optional) · a phone camera.
+          <span>That's it — you don't need anything else.</span>
+        </p>
+      </div>
+
+      <a class="scroll-hint" href="#lab" aria-label="Scroll to LUT Lab"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>GOOGLE FLOW</span><i>✦</i>
+        <span>GEMINI VIDEO</span><i>✦</i>
+        <span>VEO</span><i>✦</i>
+        <span>SEEDANCE 2.5</span><i>✦</i>
+        <span>6 CINEMATIC LUTS</span><i>✦</i>
+        <span>4K GRADES</span><i>✦</i>
+        <span>ANTI-GRAVITY MOTION</span><i>✦</i>
+        <span>PHONE-FIRST</span><i>✦</i>
+        <span>GOOGLE FLOW</span><i>✦</i>
+        <span>GEMINI VIDEO</span><i>✦</i>
+        <span>VEO</span><i>✦</i>
+        <span>SEEDANCE 2.5</span><i>✦</i>
+        <span>6 CINEMATIC LUTS</span><i>✦</i>
+        <span>4K GRADES</span><i>✦</i>
+        <span>ANTI-GRAVITY MOTION</span><i>✦</i>
+        <span>PHONE-FIRST</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ LUT LAB ============ -->
+    <section class="section" id="lab">
+      <header class="sec-head reveal">
+        <span class="sec-tag">01 — LUT Lab</span>
+        <h2>Drag the line.<br>Watch your footage <span class="grad">transform</span>.</h2>
+        <p>Every look is graded by AI and refined by hand. Pick a LUT and compare <b>RAW</b> with <b>GRADED</b> — right on your screen.</p>
+      </header>
+
+      <div class="lut-chips reveal" role="tablist" aria-label="Choose a LUT" id="lutChips">
+        <button class="chip is-active" role="tab" aria-selected="true" data-lut="amber">Amber</button>
+        <button class="chip" role="tab" aria-selected="false" data-lut="green">Pale Green</button>
+        <button class="chip" role="tab" aria-selected="false" data-lut="harbour">Harbour Blue</button>
+        <button class="chip" role="tab" aria-selected="false" data-lut="cyan">Island Cyan</button>
+        <button class="chip" role="tab" aria-selected="false" data-lut="avenue">Avenue Star</button>
+        <button class="chip" role="tab" aria-selected="false" data-lut="mongkok">Mong Kok</button>
+      </div>
+
+      <div class="stage-wrap reveal">
+        <div class="compare" id="compare" role="slider" tabindex="0"
+             aria-label="Compare raw and graded footage"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <img class="layer raw" id="imgRaw" src="images/scene-amber.jpg" alt="Footage before the LUT is applied (raw)">
+          <img class="layer graded" id="imgGraded" src="images/scene-amber.jpg" alt="Footage after the LUT is applied (graded)">
+          <span class="tag tag-left">RAW · Rec.709</span>
+          <span class="tag tag-right">LUT APPLIED</span>
+          <div class="compare-line" aria-hidden="true"><span class="grip">◄&nbsp;►</span></div>
+        </div>
+
+        <div class="lut-meta glass">
+          <div class="lut-meta-text">
+            <h3 id="lutName">Amber</h3>
+            <p id="lutDesc">Warm amber highlights with clean blue shadow separation for rainy city nights.</p>
+          </div>
+          <div class="lut-meta-buy">
+            <span class="lut-specs">1080p–4K · Rec.709 + Log</span>
+            <a id="getLut" class="btn btn-primary btn-sm"
+               href="mailto:sushantc909@gmail.com?subject=Get%20the%20Amber%20LUT%20pack">Get this pack</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI ENGINES ============ -->
+    <section class="section section-alt" id="ai">
+      <header class="sec-head reveal">
+        <span class="sec-tag">02 — AI Engines</span>
+        <h2>The brains behind <span class="grad">the magic</span>.</h2>
+        <p>I build every project on the strongest AI tools on the planet — so your video looks like a movie, not a phone clip.</p>
+      </header>
+
+      <div class="ai-grid">
+        <article class="ai-card tilt glass reveal">
+          <div class="ai-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 5v14M17 5v14M3 9h4M3 15h4M17 9h4M17 15h4"/></svg>
+          </div>
+          <h3>Google Flow</h3>
+          <span class="ai-tag">Cinematic directing</span>
+          <p>Direct AI scenes like a film director — storyboard, camera moves and final shots in a single take.</p>
+        </article>
+
+        <article class="ai-card tilt glass reveal">
+          <div class="ai-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/></svg>
+          </div>
+          <h3>Gemini</h3>
+          <span class="ai-tag">AI co-editor</span>
+          <p>Script, recut, retime and fix color with a sentence. Your editor that never sleeps and never complains.</p>
+        </article>
+
+        <article class="ai-card tilt glass reveal">
+          <div class="ai-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5v-7z"/></svg>
+          </div>
+          <h3>Veo</h3>
+          <span class="ai-tag">Photoreal video</span>
+          <p>Rain, light and skin that feel real. Generate B-roll and full shots from a single line of text.</p>
+        </article>
+
+        <article class="ai-card tilt glass reveal">
+          <div class="ai-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/><path d="M3 18c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/></svg>
+          </div>
+          <h3>Seedance 2.5</h3>
+          <span class="ai-tag">Motion &amp; dance</span>
+          <p>Fluid, physics-based movement for AI characters. Choreography that actually dances, frame after frame.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SHOWREEL ============ -->
+    <section class="section" id="showcase">
+      <header class="sec-head reveal">
+        <span class="sec-tag">03 — Showreel</span>
+        <h2>Selected <span class="grad">work</span>.</h2>
+        <p>Still frames from recent projects — every one graded in the LUT Lab above.</p>
+      </header>
+
+      <div class="gallery">
+        <figure class="g-card reveal">
+          <img src="images/scene-amber.jpg" alt="Rainy neon street graded with the Amber LUT" loading="lazy" decoding="async">
+          <figcaption><b>Amber</b><span>Graded · Amber pack</span></figcaption>
+        </figure>
+        <figure class="g-card reveal">
+          <img src="images/scene-harbour.jpg" alt="Harbour ferries at blue hour graded with Harbour Blue" loading="lazy" decoding="async">
+          <figcaption><b>Harbour Blue</b><span>Graded · Harbour Blue pack</span></figcaption>
+        </figure>
+        <figure class="g-card reveal">
+          <img src="images/scene-cyan.jpg" alt="Tropical island promenade graded with Island Cyan" loading="lazy" decoding="async">
+          <figcaption><b>Island Cyan</b><span>Graded · Island Cyan pack</span></figcaption>
+        </figure>
+        <figure class="g-card reveal">
+          <img src="images/scene-mongkok.jpg" alt="Dense neon market street graded with Mong Kok" loading="lazy" decoding="async">
+          <figcaption><b>Mong Kok</b><span>Graded · Mong Kok pack</span></figcaption>
+        </figure>
+        <figure class="g-card reveal">
+          <img src="images/scene-avenue.jpg" alt="City avenue at night with light trails graded with Avenue Star" loading="lazy" decoding="async">
+          <figcaption><b>Avenue Star</b><span>Graded · Avenue Star pack</span></figcaption>
+        </figure>
+        <figure class="g-card reveal">
+          <img src="images/scene-green.jpg" alt="Quiet overcast street graded with Pale Green" loading="lazy" decoding="async">
+          <figcaption><b>Pale Green</b><span>Graded · Pale Green pack</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section-alt" id="process">
+      <header class="sec-head reveal">
+        <span class="sec-tag">04 — Process</span>
+        <h2>From phone to <span class="grad">premiere</span> in 4 steps.</h2>
+      </header>
+
+      <ol class="steps">
+        <li class="step glass reveal">
+          <span class="step-no">01</span>
+          <h3>Shoot or generate</h3>
+          <p>Your phone camera, a drone, or one line of text into Google Flow / Veo.</p>
+        </li>
+        <li class="step glass reveal">
+          <span class="step-no">02</span>
+          <h3>Pick a look</h3>
+          <p>Drag the LUT Lab slider until the color feels exactly right.</p>
+        </li>
+        <li class="step glass reveal">
+          <span class="step-no">03</span>
+          <h3>AI enhance</h3>
+          <p>Gemini recuts, Seedance 2.5 adds motion, Veo fills the missing shots.</p>
+        </li>
+        <li class="step glass reveal">
+          <span class="step-no">04</span>
+          <h3>Export</h3>
+          <p>1080p to 4K, vertical or wide — Reels, Shorts and YouTube ready.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="contact-card tilt glass reveal">
+        <h2>Let's make your next reel <span class="grad">float</span>.</h2>
+        <p>Tell me what you're making — a reel, a short, a music video, a wedding — and I'll suggest the LUT + AI stack for it.</p>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+          <textarea name="msg" rows="3" placeholder="What are you creating?" required></textarea>
+          <button class="btn btn-primary" type="submit">Send via email →</button>
+        </form>
+        <p class="fine">Prefer chat? Email <a href="mailto:sushantc909@gmail.com">sushantc909@gmail.com</a> — reply within 24h.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="icons/icon-512.png" alt="" width="34" height="34">
+        <div>
+          <strong>Sushant Studios</strong>
+          <span>Anti-gravity cinematic LUTs &amp; AI video.</span>
+        </div>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#lab">LUT Lab</a>
+        <a href="#ai">AI Engines</a>
+        <a href="#showcase">Showreel</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Sushant Studios</span>
+      <button id="installBtn3" class="btn btn-ghost btn-sm" hidden>⤓&nbsp;Install app</button>
+      <span>Built with HTML · CSS · JS · Python</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
