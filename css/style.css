@@ -213,6 +213,36 @@ ul, ol { list-style: none; }
 .chips li:nth-child(3) { animation-delay: 2.4s; }
 .chips li:nth-child(4) { animation-delay: 3.6s; }
 
+/* hero capability cards */
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 660px;
+  margin: 40px auto 0;
+}
+.hcard {
+  text-align: left;
+  padding: 20px 22px;
+  border-radius: 18px;
+  animation: floatY 6s ease-in-out infinite;
+}
+.hcard:nth-child(2) { animation-delay: 1.6s; }
+.hcard-ico {
+  display: inline-grid; place-items: center;
+  width: 44px; height: 44px; border-radius: 12px;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, rgba(245, 192, 101, 0.16), rgba(77, 227, 255, 0.16));
+  border: 1px solid var(--glass-brd);
+  margin-bottom: 12px;
+}
+.hcard h3 { font-size: 1.05rem; font-weight: 700; }
+.hcard p { color: var(--mut); font-size: 0.85rem; font-weight: 300; margin-top: 4px; }
+
+.need-line { margin-top: 30px; font-size: 0.86rem; color: var(--mut); font-weight: 300; }
+.need-line b { color: var(--ink); }
+.need-line span { color: #626c82; }
+
 .scroll-hint {
   position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%);
   width: 26px; height: 42px; border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 14px;
@@ -517,6 +547,7 @@ ul, ol { list-style: none; }
   .steps { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 620px) {
+  .hero-cards { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr; }
   .compare { aspect-ratio: 4 / 3; }
   .lut-meta { flex-direction: column; align-items: flex-start; }
